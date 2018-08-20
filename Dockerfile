@@ -4,7 +4,7 @@ MAINTAINER Primiano Tucci <p.tucci@gmail.com>
 RUN apt-get -y update && \
     apt-get -y install git python-pip python-libvirt python-libxml2 supervisor novnc
 
-RUN git clone https://github.com/retspen/webvirtmgr /webvirtmgr
+RUN git clone https://github.com/jettyu/webvirtmgr /webvirtmgr
 WORKDIR /webvirtmgr
 #RUN git checkout 7f140f99f4 #v4.8.8
 RUN git checkout web_console #v4.8.8
